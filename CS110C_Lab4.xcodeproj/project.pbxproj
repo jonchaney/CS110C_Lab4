@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FCD7FF961C06768400D1F679 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD7FF951C06768400D1F679 /* main.cpp */; };
+		FCD7FF9F1C0677E000D1F679 /* ArrayQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCD7FF9D1C0677E000D1F679 /* ArrayQueue.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		FCD7FF921C06768400D1F679 /* CS110C_Lab4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS110C_Lab4; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCD7FF951C06768400D1F679 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FCD7FF9C1C0677C800D1F679 /* QueueInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueInterface.h; sourceTree = "<group>"; };
+		FCD7FF9D1C0677E000D1F679 /* ArrayQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayQueue.cpp; sourceTree = "<group>"; };
+		FCD7FF9E1C0677E000D1F679 /* ArrayQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArrayQueue.hpp; sourceTree = "<group>"; };
+		FCD7FFA01C06796700D1F679 /* QueueException.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				FCD7FF951C06768400D1F679 /* main.cpp */,
+				FCD7FF9C1C0677C800D1F679 /* QueueInterface.h */,
+				FCD7FFA01C06796700D1F679 /* QueueException.h */,
+				FCD7FF9D1C0677E000D1F679 /* ArrayQueue.cpp */,
+				FCD7FF9E1C0677E000D1F679 /* ArrayQueue.hpp */,
 			);
 			path = CS110C_Lab4;
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCD7FF961C06768400D1F679 /* main.cpp in Sources */,
+				FCD7FF9F1C0677E000D1F679 /* ArrayQueue.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

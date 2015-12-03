@@ -22,24 +22,36 @@ private:
   ItemType items[MAX_QUEUE];   // array of queue items
   int front;                   // index to front of queue
   int back;                    // index to back of queue
+  bool isFull;
   
 public:
   ArrayQueue();
   // copy constructor and destructor are supplied by the compiler
   
+  // sees whether this queue is empty
+  // return true if the queue is empty, false if not
   bool isEmpty() const;
-  bool isFull() const;
   
-  // throw QueueException is queue is full
+  // adds a new entry to the back of this queue
+  // post  : newEntry is a the back of the Queue
+  // param : newEntry is the object to be added as a new entry
+  // throw QueueException if Queue is full
   void enqueue(const ItemType& newEntry);
   
-  // throw QueueException if queue is initially empty
+  // removes the front of this queue
+  // post  : the front of the queue is removed
+  // throw : QueueException if queue is initally empty
   void dequeue();
   
-  // throw QueueException if queue is empty
+  // returns a copy of the front of this queue
+  // post   : a copy of the front of the queue is returned and the queue is unchanged
+  // return : a copy of the front of the queue
+  // throw  : QueueException if queue is initally empty
   ItemType peekFront() const;
   
   // displays queue
+  // post : none
+  // throw : throws exception if list is empty
   void display();
 };
 
